@@ -1,0 +1,10 @@
+{
+	"id": "example_gem",
+	"name": "Example: Gem",
+	"version": "1.0.0",
+	"author": "You",
+	"description": "Adds the 'mod_gem' item with its own icon and a recipe (3 pebble -> 1 gem).",
+	"game_version": "0.0.7",
+	"dependencies": [],
+	"load_after": []
+}

@@ -1,0 +1,9 @@
+{
+	"id": "example_translation",
+	"name": "Example: Translation",
+	"version": "1.0.0",
+	"author": "IvyVR",
+	"description": "Template to translate Type III into any language. Off until \"language\" is set in manifest.json. See README.md.",
+	"game_version": "0.0.7",
+	"language": ""
+}

@@ -1,0 +1,8 @@
+{
+	"id": "dev_console",
+	"name": "Developer Console",
+	"version": "1.0.0",
+	"author": "You",
+	"description": "Re-enables the F1 console (give, tp, time, speed...) in single player.",
+	"game_version": "0.0.7"
+}

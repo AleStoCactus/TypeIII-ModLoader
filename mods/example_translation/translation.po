@@ -1,0 +1,1130 @@
+# Type III - translation template
+#
+# 1. In manifest.json set "language" to your language code (fr, de, es, pt_BR...).
+# 2. Write the translated text in every msgstr "" below.
+# - Leave a msgstr empty to keep the English text.
+# - Do not change the msgid lines: they must match the game's English text.
+# - Keep \n (new line), BBCode tags like [b]...[/b] and symbols as they are.
+# - Spaces at the start/end of a msgid are kept automatically.
+# - msgctxt "item name" / "stat name" / "stat description" are applied to items
+#   and stats; everything else is interface text.
+#
+# Easiest way to translate: open this file with Poedit (https://poedit.net).
+# New texts found while playing are added at the end of this file automatically.
+msgid ""
+msgstr ""
+"Project-Id-Version: Type III 0.0.7\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Game-Version: 0.0.7\n"
+
+#. Interface: UI/HUD/InteractUIs/inventory_ui.tscn > UIScreen/Border/Vbox/Label [text]
+msgid "Storage"
+msgstr ""
+
+#. Interface: UI/HUD/InteractUIs/thermal_generator_ui.tscn > UIScreen/VBoxContainer/NinePatchRect/MarginContainer/Label [text]
+msgid "<Thermal Generator>\n\nHOW TO USE: Place a fuel source (coal) in the slots below. Then, place one or more devices you want to power right next to the generator, so they can be powered.\n\nNOTE: The generator has an internal capacity, so it won't stop powering devices immediately after running out of fuel."
+msgstr ""
+
+#. Interface: UI/HUD/InteractUIs/thermal_generator_ui.tscn > UIScreen/VBoxContainer/NinePatchRect2/VBoxContainer/Label [text]
+msgid "Fuel"
+msgstr ""
+
+#. Interface: UI/HUD/player_menu.tscn > Container/Label [text]
+msgid "UNIUS_METAL"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer (tab)
+msgid "ScrollContainer"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Label [text]
+#. Interface: UI/Menus/pause_menu.tscn > PanelContainer/MarginContainer/VBoxContainer/ControlsBtn [text]
+msgid "Controls"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action/ActionName [text]
+msgid "Move:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action/ActionBind [text]
+msgid "W, A, S, D"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action2/ActionName [text]
+msgid "Jump:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action2/ActionBind [text]
+msgid "SPACE"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action11/ActionName [text]
+msgid "Rotate camera:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action11/ActionBind [text]
+msgid "E, Q"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action13/ActionName [text]
+msgid "Select upwards:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action3/ActionName [text]
+msgid "Break:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action3/ActionBind [text]
+msgid "Left Mouse Button (hold)"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action4/ActionName [text]
+msgid "Place:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action4/ActionBind [text]
+msgid "Right Mouse Button"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action5/ActionName [text]
+msgid "Interact:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action5/ActionBind [text]
+msgid "Shift + Right Mouse Button"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action6/ActionName [text]
+msgid "Inventory:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action8/ActionName [text]
+msgid "Chat:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action7/ActionName [text]
+msgid "Drop held item / stack:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action7/ActionBind [text]
+msgid "X, CTRL + X"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action9/ActionName [text]
+msgid "Hotbar move selection:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action9/ActionBind [text]
+msgid "Scroll wheel"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action12/ActionName [text]
+msgid "Zoom:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action12/ActionBind [text]
+msgid "CTRL + Scroll wheel"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action10/ActionName [text]
+msgid "Pause:"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > MarginContainer/Panel/ScrollContainer/Actions/Action10/ActionBind [text]
+msgid "ESC"
+msgstr ""
+
+#. Interface: UI/Menus/controls_menu.tscn > BackButton [text]
+#. Interface: UI/Menus/settings_menu.tscn > BackButton [text]
+msgid "Back"
+msgstr ""
+
+#. Interface: UI/Menus/loading_screen.tscn > Label [text]
+msgid "Loading..."
+msgstr ""
+
+#. Interface: UI/Menus/loading_screen.tscn > MarginContainer/CancelButton [text]
+#. Interface: UI/Widgets/popup.tscn > PopupFrame/VBoxContainer/Control/ButtonContainer/Cancel [text]
+#. Popup (main menu)
+msgid "Cancel"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/PlayerName [placeholder_text]
+msgid "player name"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/Singleplayer [text]
+msgid "Singleplayer"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/Multiplayer [text]
+msgid "Multiplayer"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/Settings [text]
+#. Interface: UI/Menus/pause_menu.tscn > PanelContainer/MarginContainer/VBoxContainer/SettingsBtn [text]
+msgid "Settings"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/Credits [text]
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Credits (tab)
+msgid "Credits"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/Discord [text]
+msgid "Discord"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/itchio [text]
+msgid "Itch.io"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > GUIButtons/VBoxContainer/PanelContainer/VBoxContainer/Quit [text]
+msgid "Quit"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Worlds (tab)
+msgid "Worlds"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Worlds/ScrollContainer/PanelContainer/SingleplayerWorldsList/SingleplayerWorld/VBoxContainer/TopRow/NewWorldNameTextEdit [placeholder_text]
+msgid "Give your new world a cool name..."
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Worlds/ScrollContainer/PanelContainer/SingleplayerWorldsList/SingleplayerWorld/VBoxContainer/BottomRow/CreateButton/CreateButton [text]
+msgid "   Create   "
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Servers (tab)
+msgid "Servers"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Servers/ScrollContainer/PanelContainer/ServerList/Server/VBoxContainer/TopRow/VBoxContainer/NewServerNameTextEdit [placeholder_text]
+msgid "Choose a name for the server"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Servers/ScrollContainer/PanelContainer/ServerList/Server/VBoxContainer/TopRow/VBoxContainer/NewServerIPTextEdit [placeholder_text]
+msgid "Enter the server's ip address"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Servers/ScrollContainer/PanelContainer/ServerList/Server/VBoxContainer/BottomRow/HostInfo/HostInfoButton [text]
+msgid "How to host a game?"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Servers/ScrollContainer/PanelContainer/ServerList/Server/VBoxContainer/BottomRow/AddButtonContainer/AddButton [text]
+msgid "   Add   "
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > SelectionScreen/Tabs/Credits/UIScreen/NinePatchRect/ScrollContainer/VBoxContainer/CreditsLabel [text]
+msgid "[b]Main developers[/b]\n\nsolar\nuan\n\n[b]Art & Graphics[/b]\n\nSoSoAnimations\nsolar\nuan\n\n[b]Music & SFX[/b]\n\nsolar\nhibiki\n\n[b]Special thanks[/b]\n\nZylann\n[i]for creating the [url=https://github.com/Zylann/godot_voxel/]Godot VoxelTools[/url] module[/i]\n\nTerry A. Davis\n[i]the smartest programmer that has ever lived[/i]\n\nThe number 27\n[i]that is equal to 3^3[/i]\n\n[b]... and YOU! Thanks for playing![/b]\n"
+msgstr ""
+
+#. Interface: UI/Menus/main_menu_new.tscn > InfoInTheCorner2/MarginContainer2/Label [text]
+msgid "Made by humans"
+msgstr ""
+
+#. Interface: UI/Menus/pause_menu.tscn > PanelContainer/MarginContainer/VBoxContainer/ResumeGameBtn [text]
+msgid "Resume\n"
+msgstr ""
+
+#. Interface: UI/Menus/pause_menu.tscn > PanelContainer/MarginContainer/VBoxContainer/HostGameBtn [text]
+msgid "Host game"
+msgstr ""
+
+#. Interface: UI/Menus/pause_menu.tscn > PanelContainer/MarginContainer/VBoxContainer/SaveAndQuitBtn [text]
+msgid "Save and Quit"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video (tab)
+msgid "Video"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Interface/InterfaceLabel [text]
+msgid "- Interface -"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/GUI Scale
+msgid "GUI Scale"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Camera Zoom
+msgid "Camera Zoom"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Video/VideoLabel [text]
+msgid "- Video -"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Max FPS
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Max FPS/MarginContainer/OptionName [text]
+msgid "Max FPS"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Max FPS/MarginContainer/HBoxContainer/MaxFPSValueLabel [special_values]
+msgid "Unlimited"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/V-Sync Mode
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/V-Sync Mode/MarginContainer/OptionName [text]
+msgid "V-Sync Mode"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/V-Sync Mode/MarginContainer/HBoxContainer/OptionButton [popup/item_0/text]
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Shadow Quality/MarginContainer/HBoxContainer/OptionButton [popup/item_0/text]
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Fog/MarginContainer/HBoxContainer/OptionButton [popup/item_0/text]
+msgid "Off"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/V-Sync Mode/MarginContainer/HBoxContainer/OptionButton [popup/item_1/text]
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Fog/MarginContainer/HBoxContainer/OptionButton [popup/item_1/text]
+#. Mod loader: Settings > Mod
+msgid "On"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/V-Sync Mode/MarginContainer/HBoxContainer/OptionButton [popup/item_2/text]
+msgid "Adaptive"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/V-Sync Mode/MarginContainer/HBoxContainer/OptionButton [popup/item_3/text]
+msgid "Mailbox"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Graphics/GraphicsLabel [text]
+msgid "- Graphics -"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Shadow Quality
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Shadow Quality/MarginContainer/OptionName [text]
+msgid "Shadow Quality"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Shadow Quality/MarginContainer/HBoxContainer/OptionButton [popup/item_1/text]
+msgid "Low"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Shadow Quality/MarginContainer/HBoxContainer/OptionButton [popup/item_2/text]
+msgid "Medium"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Shadow Quality/MarginContainer/HBoxContainer/OptionButton [popup/item_3/text]
+msgid "High"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Fog
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/Fog/MarginContainer/OptionName [text]
+msgid "Fog"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/See-through radius
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/See-through radius/MarginContainer/OptionName [text]
+msgid "See-through radius"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/See-through fade
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Video/ScrollContainer/VBoxContainer/See-through fade/MarginContainer/OptionName [text]
+msgid "See-through fade"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Audio (tab)
+msgid "Audio"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Audio/VBoxContainer/Master
+msgid "Master"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Audio/VBoxContainer/Music
+msgid "Music"
+msgstr ""
+
+#. Interface: UI/Menus/settings_menu.tscn > TabContainer/Audio/VBoxContainer/SFX
+msgid "SFX"
+msgstr ""
+
+#. Interface: UI/Widgets/back_button.tscn > . [text]
+msgid "Indietro"
+msgstr ""
+
+#. Interface: UI/Widgets/chat_panel.tscn > UIScreen/VBoxContainer/BG/ChatBox [placeholder_text]
+msgid "Write a message..."
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_crafting.tscn > VBoxContainer/LabelsCont/In [text]
+#. Interface: UI/Widgets/player_menu_smelting.tscn > VBoxContainer/LabelsCont/In [text]
+msgid " In"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_crafting.tscn > VBoxContainer/LabelsCont/Ouput [text]
+msgid "Out "
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_screen.tscn > MarginContainer/HBoxContainer/VBoxContainer/Menu/VBoxContainer/HBoxContainer/LabelLeft [text]
+msgid "player"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_screen.tscn > MarginContainer/HBoxContainer/VBoxContainer/Menu/VBoxContainer/PlayerScreenTabContainer/Home (tab)
+msgid "Home"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_screen.tscn > MarginContainer/HBoxContainer/VBoxContainer/Menu/VBoxContainer/PlayerScreenTabContainer/Crafting (tab)
+msgid "Crafting"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_screen.tscn > MarginContainer/HBoxContainer/VBoxContainer/Menu/VBoxContainer/PlayerScreenTabContainer/Smelting (tab)
+msgid "Smelting"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_screen.tscn > MarginContainer/HBoxContainer/VBoxContainer/Menu/VBoxContainer/PlayerScreenTabContainer/Modules (tab)
+msgid "Modules"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_smelting.tscn > VBoxContainer/LabelsCont/Cost [text]
+msgid "Cost: 1 E/s"
+msgstr ""
+
+#. Interface: UI/Widgets/player_menu_smelting.tscn > VBoxContainer/LabelsCont/Fuel [text]
+msgid "Fuel "
+msgstr ""
+
+#. Interface: UI/Widgets/popup.tscn > PopupFrame/VBoxContainer/Control/ButtonContainer/OK [text]
+#. Popup (main menu)
+msgid "OK"
+msgstr ""
+
+#. Interface: UI/Widgets/scene_switch_button.tscn > . [text]
+msgid "Next"
+msgstr ""
+
+#. Interface: UI/Widgets/server_elem.tscn > VBoxContainer/BottomRow/JoinButtonArea/JoinButton [text]
+msgid "   Join   "
+msgstr ""
+
+#. Interface: UI/Widgets/singleplayer_world_elem.tscn > VBoxContainer/BottomRow/LoadButtonArea/LoadButton [text]
+msgid "   Load   "
+msgstr ""
+
+#. Interface: UI/Widgets/tab_entry.tscn > MarginContainer/HBoxContainer/KickButton [text]
+msgid " Kick"
+msgstr ""
+
+#. Interface: UI/Widgets/tab_entry.tscn > MarginContainer/HBoxContainer/BanButton [text]
+msgid " Ban"
+msgstr ""
+
+#. Interface: UI/Widgets/tooltip.tscn > HBoxContainer/MiddleVContainer/HelpTextSect/HoverHelpTextLabel [text]
+msgid "<hover something for info>"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Failed to add server"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Cannot add multiple servers with the same IP"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Invalid IP"
+msgstr ""
+
+#. Popup (main menu)
+msgid "IPs should look like \"12.35.11.104\", \"example.com\" or \"localhost\""
+msgstr ""
+
+#. Popup (main menu)
+msgid "I/O Error"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Couldn't find world! It was either moved or deleted since you opened the game"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Couldn't delete the world! Something might be wrong with your PC..."
+msgstr ""
+
+#. Popup (main menu)
+msgid "Warning"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Are you sure you want to delete this world?"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Are you sure you want to delete this server?"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Yes (good luck)"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Yes"
+msgstr ""
+
+#. Popup (main menu)
+msgid "No, cancel"
+msgstr ""
+
+#. Popup (main menu)
+msgid "damn"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Disconnected from server"
+msgstr ""
+
+#. Popup (main menu)
+msgid "Failed to connect to server"
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "Mod"
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "- Mods -"
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "Open mods folder"
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "Restart now"
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "Changes are applied after restarting the game."
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "Restart the game to apply the changes."
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "Quit to the main menu and restart the game to apply the changes."
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "No mods installed.\nPut them in the \"mods\" folder next to the game."
+msgstr ""
+
+#. Mod loader: Settings > Mod
+msgid "- Credits -"
+msgstr ""
+
+#. Item: acorn
+msgctxt "item name"
+msgid "Acorn"
+msgstr ""
+
+#. Item description: acorn
+msgid "Obtained from trees. Plant it and it will grow into a tree."
+msgstr ""
+
+#. Item: battery
+msgctxt "item name"
+msgid "Battery"
+msgstr ""
+
+#. Item description: battery
+msgid "It can store energy and power other devices."
+msgstr ""
+
+#. Item: bedrock
+msgctxt "item name"
+msgid "Bedrock"
+msgstr ""
+
+#. Item description: bedrock
+msgid "how????"
+msgstr ""
+
+#. Item: bricks
+msgctxt "item name"
+msgid "Bricks"
+msgstr ""
+
+#. Item description: bricks
+msgid "Old but gold, great for building rudimental structures."
+msgstr ""
+
+#. Item: circuit_board
+msgctxt "item name"
+msgid "Circuit Board"
+msgstr ""
+
+#. Item description: circuit_board
+msgid "The main component for most pieces of technology."
+msgstr ""
+
+#. Item: coal
+msgctxt "item name"
+msgid "Coal"
+msgstr ""
+
+#. Item description: coal
+msgid "The simplest non-renewable fuel. Can be used to power devices through the use of the Thermal Generator."
+msgstr ""
+
+#. Item: cobalt
+msgctxt "item name"
+msgid "Cobalt"
+msgstr ""
+
+#. Item description: cobalt
+msgid "A metal that can be used to make batteries."
+msgstr ""
+
+#. Item: cobalt_mineral
+msgctxt "item name"
+msgid "Cobalt Mineral"
+msgstr ""
+
+#. Item description: cobalt_mineral
+msgid "Mineral form of cobalt. Can be smelted."
+msgstr ""
+
+#. Item: copper
+msgctxt "item name"
+msgid "Copper"
+msgstr ""
+
+#. Item description: copper
+msgid "A great conductor and base building block for many electronic devices and related accessories."
+msgstr ""
+
+#. Item: copper_cables
+msgctxt "item name"
+msgid "Copper Cables"
+msgstr ""
+
+#. Item description: copper_cables
+msgid "Multi-purpose wires used to build electronic devices."
+msgstr ""
+
+#. Item: copper_mineral
+msgctxt "item name"
+msgid "Copper Mineral"
+msgstr ""
+
+#. Item description: copper_mineral
+msgid "Mineral form of copper. Can be smelted."
+msgstr ""
+
+#. Item: defense_t5
+msgctxt "item name"
+msgid "Defense ✦"
+msgstr ""
+
+#. Item description: defense_t5
+msgid "Greatly increses defense at the expense of speed. Great for Tank builds."
+msgstr ""
+
+#. Item: dirt
+msgctxt "item name"
+msgid "Dirt"
+msgstr ""
+
+#. Item description: dirt
+msgid "Very abundant on planet Gaia. Plants grow from it."
+msgstr ""
+
+#. Item: dirt_block
+msgctxt "item name"
+msgid "Dirt Block"
+msgstr ""
+
+#. Item description: dirt_block
+msgid "Compacted dirt, can be used to create structures (please do not make your home with it, please...)"
+msgstr ""
+
+#. Item: electric_furnace
+msgctxt "item name"
+msgid "Electric Furnace"
+msgstr ""
+
+#. Item: excavation_t1
+msgctxt "item name"
+msgid "Excavation I"
+msgstr ""
+
+#. Item description: excavation_t1
+#. Item description: excavation_t2
+#. Item description: excavation_t3
+msgid "Essential Module for exploring. Improves both mining speed and lets you mine tougher materials."
+msgstr ""
+
+#. Item: excavation_t2
+msgctxt "item name"
+msgid "Excavation II"
+msgstr ""
+
+#. Item: excavation_t3
+msgctxt "item name"
+msgid "Excavation III"
+msgstr ""
+
+#. Item: excavation_t5
+msgctxt "item name"
+msgid "Excavation ✦"
+msgstr ""
+
+#. Item: fiberglass
+msgctxt "item name"
+msgid "Fiberglass"
+msgstr ""
+
+#. Item description: fiberglass
+msgid "Used mainly to create printed circuit boards."
+msgstr ""
+
+#. Item: fishing_rod
+msgctxt "item name"
+msgid "Fishing Rod"
+msgstr ""
+
+#. Item description: fishing_rod
+msgid "I'm fishing it. 🫪"
+msgstr ""
+
+#. Item: glass
+msgctxt "item name"
+msgid "Glass"
+msgstr ""
+
+#. Item description: glass
+msgid "Transparent, amorphous material used for isolating spaces while allowing a view inside/outside."
+msgstr ""
+
+#. Item: gold
+msgctxt "item name"
+msgid "Gold"
+msgstr ""
+
+#. Item description: gold
+msgid "Metal and great conductor of electricity."
+msgstr ""
+
+#. Item: grass_fiber
+msgctxt "item name"
+msgid "Grass"
+msgstr ""
+
+#. Item: hatchet
+msgctxt "item name"
+msgid "Hatchet"
+msgstr ""
+
+#. Item description: hatchet
+msgid "A hand-crafted stone hatched that can chop down trees.\n"
+msgstr ""
+
+#. Item: iron
+msgctxt "item name"
+msgid "Iron"
+msgstr ""
+
+#. Item description: iron
+msgid "Very solid metal, useful for making the outer casing of electronic devices."
+msgstr ""
+
+#. Item: iron_mineral
+msgctxt "item name"
+msgid "Iron Mineral"
+msgstr ""
+
+#. Item description: iron_mineral
+msgid "Mineral form of iron. Can be smelted."
+msgstr ""
+
+#. Item: lithium
+msgctxt "item name"
+msgid "Lithium"
+msgstr ""
+
+#. Item description: lithium
+msgid "Light and reactive metal, useful for storing energy and creating batteries."
+msgstr ""
+
+#. Item: lithium_mineral
+msgctxt "item name"
+msgid "Lithium Mineral"
+msgstr ""
+
+#. Item description: lithium_mineral
+msgid "Mineral form of lithium. Can be smelted."
+msgstr ""
+
+#. Item: log
+msgctxt "item name"
+msgid "Log"
+msgstr ""
+
+#. Item description: log
+msgid "Wood logs obtained from trees."
+msgstr ""
+
+#. Item: nrg
+msgctxt "item name"
+msgid "N.R.G."
+msgstr ""
+
+#. Item description: nrg
+msgid "This device uses power to regenerate the player's energy level."
+msgstr ""
+
+#. Item: paddle
+msgctxt "item name"
+msgid "Paddle"
+msgstr ""
+
+#. Item: pebble
+msgctxt "item name"
+msgid "Pebble"
+msgstr ""
+
+#. Item description: pebble
+msgid "A bunch of rocks."
+msgstr ""
+
+#. Item: piss_block
+msgctxt "item name"
+msgid "Piss Block"
+msgstr ""
+
+#. Item description: piss_block
+msgid "shoutout to data miners."
+msgstr ""
+
+#. Item: quartz
+msgctxt "item name"
+msgid "Quartz"
+msgstr ""
+
+#. Item: recharge_t1
+msgctxt "item name"
+msgid "Recharge I"
+msgstr ""
+
+#. Item description: recharge_t1
+#. Item description: recharge_t2
+#. Item description: recharge_t3
+msgid "Lets you regenerate energy faster"
+msgstr ""
+
+#. Item: recharge_t2
+msgctxt "item name"
+msgid "Recharge II"
+msgstr ""
+
+#. Item: recharge_t3
+msgctxt "item name"
+msgid "Recharge III"
+msgstr ""
+
+#. Item: recharge_t4
+msgctxt "item name"
+msgid "Recharge IV"
+msgstr ""
+
+#. Item: recharge_t5
+msgctxt "item name"
+msgid "Recharge ✦"
+msgstr ""
+
+#. Item: rope
+msgctxt "item name"
+msgid "Rope"
+msgstr ""
+
+#. Item: ruined_stone_bricks
+msgctxt "item name"
+msgid "Ruined Stone Bricks"
+msgstr ""
+
+#. Item description: ruined_stone_bricks
+msgid "Aesthetic (ig)."
+msgstr ""
+
+#. Item: sand
+msgctxt "item name"
+msgid "Sand"
+msgstr ""
+
+#. Item description: sand
+msgid "Granular mix of minerals, can be smelted to make glass, or compacted into building blocks."
+msgstr ""
+
+#. Item: sand_block
+msgctxt "item name"
+msgid "Sand Block"
+msgstr ""
+
+#. Item description: sand_block
+msgid "Bunched up sand, can be used to build."
+msgstr ""
+
+#. Item: silicon
+msgctxt "item name"
+msgid "Silicon"
+msgstr ""
+
+#. Item description: silicon
+msgid "Semi-conductor metal, fundemental for electronic components."
+msgstr ""
+
+#. Item: smooth_rock
+msgctxt "item name"
+msgid "Smooth Rock"
+msgstr ""
+
+#. Item: snow
+msgctxt "item name"
+msgid "Snow"
+msgstr ""
+
+#. Item description: snow
+msgid "Granular frozen water that accumulates from precipitations in colder regions of a planet (< 273K)"
+msgstr ""
+
+#. Item: snow_block
+msgctxt "item name"
+msgid "Snow Block"
+msgstr ""
+
+#. Item description: snow_block
+msgid "Compacted snow, can be used as a building block."
+msgstr ""
+
+#. Item: speed_t1
+msgctxt "item name"
+msgid "Speed I"
+msgstr ""
+
+#. Item description: speed_t1
+#. Item description: speed_t2
+#. Item description: speed_t3
+msgid "Some might say this is Hardware Acceleration..."
+msgstr ""
+
+#. Item: speed_t2
+msgctxt "item name"
+msgid "Speed II"
+msgstr ""
+
+#. Item: speed_t3
+msgctxt "item name"
+msgid "Speed III"
+msgstr ""
+
+#. Item: speed_t4
+msgctxt "item name"
+msgid "Speed IV"
+msgstr ""
+
+#. Item: speed_t5
+msgctxt "item name"
+msgid "Speed ✦"
+msgstr ""
+
+#. Item: stone_bricks
+msgctxt "item name"
+msgid "Stone Bricks"
+msgstr ""
+
+#. Item description: stone_bricks
+msgid "Building material made of compacted stone. Decently durable."
+msgstr ""
+
+#. Item: storage_unit
+msgctxt "item name"
+msgid "Storage Unit"
+msgstr ""
+
+#. Item description: storage_unit
+msgid "A storage container for items that requires power to function."
+msgstr ""
+
+#. Item: sulphur
+msgctxt "item name"
+msgid "Sulphur"
+msgstr ""
+
+#. Item: thermal_generator
+msgctxt "item name"
+msgid "Thermal Generator"
+msgstr ""
+
+#. Item description: thermal_generator
+msgid "This device can generate power when fueled"
+msgstr ""
+
+#. Item: torch
+msgctxt "item name"
+msgid "Torch"
+msgstr ""
+
+#. Item description: torch
+msgid "A primitive light source that burns coal to make light."
+msgstr ""
+
+#. Item: transistor
+msgctxt "item name"
+msgid "Transistor"
+msgstr ""
+
+#. Item: wire
+msgctxt "item name"
+msgid "Wire"
+msgstr ""
+
+#. Item: wood
+msgctxt "item name"
+msgid "Wood"
+msgstr ""
+
+#. Item description: wood
+msgid "Wood planks made from logs, used to craft any wood-related object"
+msgstr ""
+
+#. Item: wood_block
+msgctxt "item name"
+msgid "Wood Block"
+msgstr ""
+
+#. Item description: wood_block
+msgid "An organic building block. Not very durable."
+msgstr ""
+
+#. Item: wooden_wall
+msgctxt "item name"
+msgid "Wooden Wall"
+msgstr ""
+
+#. Item description: wooden_wall
+msgid "Basic walls made from cut wood. Useful to protect yourself and create a simple shelter."
+msgstr ""
+
+#. Stat: energy_input
+msgctxt "stat name"
+msgid "Energy Input"
+msgstr ""
+
+#. Stat: energy_input
+msgctxt "stat description"
+msgid "energy required by device"
+msgstr ""
+
+#. Stat: energy_output
+msgctxt "stat name"
+msgid "Energy Output"
+msgstr ""
+
+#. Stat: energy_output
+msgctxt "stat description"
+msgid "energy delivered by device"
+msgstr ""
+
+#. Stat: inventory_capacity
+msgctxt "stat name"
+msgid "Inventory Capacity"
+msgstr ""
+
+#. Stat: inventory_capacity
+msgctxt "stat description"
+msgid "more storage slots"
+msgstr ""
+
+#. Stat: jump
+msgctxt "stat name"
+msgid "Jump"
+msgstr ""
+
+#. Stat: jump
+msgctxt "stat description"
+msgid "higher jumps"
+msgstr ""
+
+#. Stat: max_health
+msgctxt "stat name"
+msgid "Max Health"
+msgstr ""
+
+#. Stat: max_health
+msgctxt "stat description"
+msgid "store more energy"
+msgstr ""
+
+#. Stat: mining_level
+msgctxt "stat name"
+msgid "Mining Level"
+msgstr ""
+
+#. Stat: mining_level
+msgctxt "stat description"
+msgid "break tougher materials"
+msgstr ""
+
+#. Stat: mining_power
+msgctxt "stat name"
+msgid "Mining Power"
+msgstr ""
+
+#. Stat: mining_power
+msgctxt "stat description"
+msgid "stronger punch when mining"
+msgstr ""
+
+#. Stat: mining_speed
+msgctxt "stat name"
+msgid "Mining Speed"
+msgstr ""
+
+#. Stat: mining_speed
+msgctxt "stat description"
+msgid "mine faster"
+msgstr ""
+
+#. Stat: power_capacity
+msgctxt "stat name"
+msgid "Power Capacity"
+msgstr ""
+
+#. Stat: power_capacity
+msgctxt "stat description"
+msgid "energy stored by device"
+msgstr ""
+
+#. Stat: speed
+msgctxt "stat name"
+msgid "Speed"
+msgstr ""
+
+#. Stat: speed
+msgctxt "stat description"
+msgid "move faster"
+msgstr ""
+
+#. Found while playing (could also be a name or a dynamic text)
+msgid "Type III"
+msgstr ""
+
+#. Found while playing (could also be a name or a dynamic text)
+msgid "Enter \"help\" for instructions"
+msgstr ""
+
+#. Item: mod_gem (added by a mod)
+msgctxt "item name"
+msgid "Mod Gem"
+msgstr ""
+
+#. Item description: mod_gem
+msgid "An item added by a mod!"
+msgstr ""
