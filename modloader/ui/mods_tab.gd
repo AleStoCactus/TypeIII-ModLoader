@@ -1,14 +1,19 @@
-extends HBoxContainer
+extends MarginContainer
 ## "Mod" tab added by the mod loader to Settings (main menu and pause menu).
 ## Lists every installed mod with an On/Off selector. Changes are saved right
 ## away and applied the next time the game starts.
 ##
 ## To look like the rest of the game it copies the layout of the "Video" tab
 ## and clones its widgets (section headers and option rows like "Fog").
+## The GitHub button sits on top of that layout, in the bottom-right corner.
 
 const COLOR_DISABLED := Color(1, 1, 1, 0.55)
 const COLOR_ERROR := Color(1.0, 0.55, 0.5)
 const COLOR_CREDITS := Color(1, 1, 1, 0.75)
+const GITHUB_TEXT_SCALE := 0.75
+
+## GitHub mark (Octicons "mark-github", MIT license), white: the button tints it.
+const GITHUB_ICON_SVG := """<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#ffffff" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>"""
 
 var loader: Node
 var _list: VBoxContainer
@@ -16,17 +21,23 @@ var _header_template: Control
 var _row_template: Control
 var _hint: Label
 var _restart_btn: Button
+var _github_btn: Button
 
 
 func setup(p_loader: Node, video_tab: Control) -> void:
 	loader = p_loader
 	name = loader.MODS_TAB_NAME
+	for side: String in ["left", "top", "right", "bottom"]:
+		add_theme_constant_override("margin_" + side, 0)
 
+	# Same layout as the Video tab: an HBoxContainer with a ScrollContainer.
+	var page := HBoxContainer.new()
+	add_child(page)
 	var src_scroll: ScrollContainer = null
 	var src_list: Container = null
 	if video_tab:
 		if video_tab is BoxContainer:
-			alignment = video_tab.alignment
+			page.alignment = video_tab.alignment
 		size_flags_horizontal = video_tab.size_flags_horizontal
 		size_flags_vertical = video_tab.size_flags_vertical
 		src_scroll = _first_child_of_type(video_tab, "ScrollContainer")
@@ -44,7 +55,7 @@ func setup(p_loader: Node, video_tab: Control) -> void:
 	else:
 		scroll.custom_minimum_size = Vector2(650, 0)
 		scroll.size_flags_vertical = SIZE_EXPAND_FILL
-	add_child(scroll)
+	page.add_child(scroll)
 
 	_list = VBoxContainer.new()
 	_list.size_flags_horizontal = SIZE_EXPAND_FILL
@@ -60,11 +71,42 @@ func setup(p_loader: Node, video_tab: Control) -> void:
 	scroll.add_child(_list)
 
 	_build()
+	_add_github_button()
 
 
 func _ready() -> void:
 	visibility_changed.connect(_refresh_hint)
 	_refresh_hint()
+	_style_github_button()
+
+
+## Small button in the bottom-right corner that opens the project page.
+func _add_github_button() -> void:
+	_github_btn = Button.new()
+	_github_btn.name = "GitHub"
+	_github_btn.text = "GitHub"
+	_github_btn.tooltip_text = loader.PROJECT_URL
+	_github_btn.auto_translate_mode = AUTO_TRANSLATE_MODE_DISABLED  # a name: nothing to translate
+	_github_btn.size_flags_horizontal = SIZE_SHRINK_END
+	_github_btn.size_flags_vertical = SIZE_SHRINK_END
+	_github_btn.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_github_btn.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP  # logo above the text
+	_github_btn.pressed.connect(loader.open_project_page)
+	add_child(_github_btn)
+
+
+## Smaller text than the other buttons (it must fit between the scroll bar and the
+## panel's edge) and the logo drawn to match it. Needs the theme: call when in the tree.
+func _style_github_button() -> void:
+	if _github_btn == null:
+		return
+	var font_size := roundi(_github_btn.get_theme_font_size(&"font_size") * GITHUB_TEXT_SCALE)
+	_github_btn.add_theme_font_size_override(&"font_size", font_size)
+	var font := _github_btn.get_theme_font(&"font")
+	var px := font.get_height(font_size) * 1.2 if font else 20.0
+	var image := Image.new()
+	if image.load_svg_from_string(GITHUB_ICON_SVG, px / 16.0) == OK:
+		_github_btn.icon = ImageTexture.create_from_image(image)
 
 
 func _build() -> void:

@@ -63,6 +63,8 @@ modding/
   - A grey name means the mod is off; a red name means it is on but failed to load
     (for example a required mod is missing or disabled).
   - **Open mods folder** opens the `mods/` folder in the file manager.
+  - **GitHub** (bottom right) opens the mod loader's page in the browser:
+    https://github.com/AleStoCactus/TypeIII-ModLoader
   - The tab is also in the pause menu's settings, but there you have to go back
     to the main menu to restart.
 - A disabled zip is not even mounted, so its files do not touch the game.

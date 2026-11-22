@@ -21,13 +21,14 @@ signal game_ready
 signal world_loaded(world: Node)
 signal mod_toggled(id: String, enabled: bool)
 
-const LOADER_VERSION := "0.2.2"
+const LOADER_VERSION := "1.0.0"
 const MODS_DIR_NAME := "mods"
 const MANIFEST_FILE := "manifest.json"
 const MAIN_SCRIPT := "mod_main.gd"
 const CONFIG_FILE := "modloader/mod_config.json"
 const LOG_FILE := "modloader/modloader.log"
 const CREDITS_FILE := "modloader/credits.txt"
+const PROJECT_URL := "https://github.com/AleStoCactus/TypeIII-ModLoader"
 
 const RECIPES_CRAFTING := "res://Resources/Crafting Recipes/Lists/player_default.tres"
 const RECIPES_SMELTING := "res://Resources/Crafting Recipes/Lists/player_default_smelting.tres"
@@ -423,6 +424,11 @@ func get_credits_text() -> String:
 func open_mods_folder() -> void:
 	# Same call the game uses to open world folders (works on Windows and Linux).
 	OS.shell_show_in_file_manager(mods_dir, true)
+
+
+## Opens the mod loader's GitHub page in the browser.
+func open_project_page() -> void:
+	OS.shell_open(PROJECT_URL)
 
 
 # --------------------------------------------------------------------------
